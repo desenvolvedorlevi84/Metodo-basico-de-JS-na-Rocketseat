@@ -1,0 +1,128 @@
+<script>
+  // const e let são locais e só funcionam no escopo onde foram criadas
+  console.log("> existe b antes do bloco? ", b);
+
+  {
+    let b = 0;
+  }
+
+  console.log("> existe b depois do bloco? ", b);
+</script>
+
+<script>
+  console.log("> existe c antes do bloco? ", b);
+
+  {
+    let c = 0;
+  }
+
+  //console.log('> existe c depois do bloco? ', c)
+</script>
+
+<script>
+  //console.log('> existe d antes do bloco? ', d)
+
+  {
+    console.log("> existe d antes? ", d);
+    let d = 0;
+  }
+
+  //console.log('> existe d depois do bloco? ', d)
+</script>
+
+<script>
+  //console.log('> existe f antes do bloco? ', d)
+
+  {
+    let f = 0;
+    console.log("> existe f? ", f);
+  }
+
+  //console.log('> existe f depois do bloco? ', f)
+</script>
+
+<script>
+    //console.log('> existe g antes do bloco? ', g)
+    let g = 1
+        {
+            let g = 0
+            console.log('> existe g? ', g)
+        }
+    
+    console.log('> existe g depois do bloco? ', g)
+</script>
+
+<script>
+    //console.log('> existe h antes do bloco? ', h)
+    let h = 1
+        {
+            h = 0
+            console.log('> existe h? ', h)
+        }
+    
+    console.log('> existe h depois do bloco? ', h)
+</script>
+
+<script>
+    //console.log('> existe j antes do bloco? ', j)
+    let j = 1
+        {
+            {
+                {
+                    {
+                        {
+                            j = 0
+                            console.log('> existe j? ', j)
+                        }
+                    }
+                }
+            }
+        }
+    
+    console.log('> existe j depois do bloco? ', j)
+</script>
+
+
+<script>
+
+    // A variável const ela é constante e nao aceita alteração, mas se forem criadas variaveis const em escopos diferentes, as alterações serão aceitas porque sao contextos diferentes e mesmo que as variaveis tenham a mesma propriedade mas sao criadas com palavra reservada e são distintas.
+
+    //console.log('> existe l antes do bloco? ', l)
+    const l = 1
+        {
+            {
+                {
+                    {
+                        {
+                            l = 0
+                            console.log('> existe l? ', l)
+                        }
+                    }
+                }
+            }
+        }
+    
+    console.log('> existe l depois do bloco? ', l)
+</script>
+
+<script>
+
+    // A variável const ela é constante e nao aceita alteração, mas se forem criadas variaveis const em escopos diferentes, as alterações serão aceitas porque sao contextos diferentes e mesmo que as variaveis tenham a mesma propriedade mas sao criadas com palavra reservada e são distintas.
+
+    //console.log('> existe n antes do bloco? ', n)
+    const n = 1
+        {
+            {
+                {
+                    {
+                        {
+                            const n = 0
+                            console.log('> existe n? ', n)
+                        }
+                    }
+                }
+            }
+        }
+    
+    console.log('> existe n depois do bloco? ', n)
+</script>
